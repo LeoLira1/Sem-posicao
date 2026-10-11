@@ -1,0 +1,28 @@
+name: sem_posicao
+description: Lista de produtos que ainda não têm posição marcada no app Gôndolas
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.2.0
+  shared_preferences: ^2.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.14.3
+
+flutter:
+  uses-material-design: true
+
+# O projeto Android é gerado pelo CI (flutter create no build.yml); os mipmaps
+# saem de `dart run flutter_launcher_icons` logo após o scaffold.
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "icon.png"
